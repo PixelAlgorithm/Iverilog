@@ -1,0 +1,66 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_01227880 .scope module, "TB" "TB" 2 1;
+ .timescale 0 0;
+v0122DC88_0 .var "a", 0 0;
+v0122E100_0 .var "b", 0 0;
+v0122DE40_0 .net "y0", 0 0, L_01229C90; 1 drivers
+v0122E310_0 .net "y1", 0 0, L_01229DA8; 1 drivers
+v0122DD38_0 .net "y2", 0 0, L_0122E730; 1 drivers
+v0122DEF0_0 .net "y3", 0 0, L_0122E688; 1 drivers
+S_01227088 .scope module, "uut" "decoder2x4" 2 4, 3 1, S_01227880;
+ .timescale 0 0;
+L_01224FC0 .functor NOT 1, v0122DC88_0, C4<0>, C4<0>, C4<0>;
+L_01222C58 .functor NOT 1, v0122E100_0, C4<0>, C4<0>, C4<0>;
+L_01229C90 .functor AND 1, L_01224FC0, L_01222C58, C4<1>, C4<1>;
+L_01229D70 .functor NOT 1, v0122DC88_0, C4<0>, C4<0>, C4<0>;
+L_01229DA8 .functor AND 1, L_01229D70, v0122E100_0, C4<1>, C4<1>;
+L_0122E500 .functor NOT 1, v0122E100_0, C4<0>, C4<0>, C4<0>;
+L_0122E730 .functor AND 1, v0122DC88_0, L_0122E500, C4<1>, C4<1>;
+L_0122E688 .functor AND 1, v0122DC88_0, v0122E100_0, C4<1>, C4<1>;
+v01133D50_0 .net *"_s0", 0 0, L_01224FC0; 1 drivers
+v01222B50_0 .net *"_s10", 0 0, L_0122E500; 1 drivers
+v01222BA8_0 .net *"_s2", 0 0, L_01222C58; 1 drivers
+v01222C00_0 .net *"_s6", 0 0, L_01229D70; 1 drivers
+v01223440_0 .net "a", 0 0, v0122DC88_0; 1 drivers
+v01223498_0 .net "b", 0 0, v0122E100_0; 1 drivers
+v012234F0_0 .alias "y0", 0 0, v0122DE40_0;
+v01229BA8_0 .alias "y1", 0 0, v0122E310_0;
+v01229C00_0 .alias "y2", 0 0, v0122DD38_0;
+v0122E0A8_0 .alias "y3", 0 0, v0122DEF0_0;
+    .scope S_01227880;
+T_0 ;
+    %vpi_call 2 6 "$dumpfile", "decoder2x4_test.vcd";
+    %vpi_call 2 7 "$dumpvars", 1'sb0, S_01227880;
+    %end;
+    .thread T_0;
+    .scope S_01227880;
+T_1 ;
+    %set/v v0122DC88_0, 0, 1;
+    %set/v v0122E100_0, 0, 1;
+    %delay 5, 0;
+    %set/v v0122DC88_0, 0, 1;
+    %set/v v0122E100_0, 1, 1;
+    %delay 5, 0;
+    %set/v v0122DC88_0, 1, 1;
+    %set/v v0122E100_0, 0, 1;
+    %delay 5, 0;
+    %set/v v0122DC88_0, 1, 1;
+    %set/v v0122E100_0, 1, 1;
+    %end;
+    .thread T_1;
+    .scope S_01227880;
+T_2 ;
+    %vpi_call 2 16 "$monitor", "At time %t, a=%b, b=%b, y0=%b, y1=%b, y2=%b, y3=%b", $time, v0122DC88_0, v0122E100_0, v0122DE40_0, v0122E310_0, v0122DD38_0, v0122DEF0_0;
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "decoder2_tb.v";
+    "decoder2.v";

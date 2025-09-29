@@ -1,0 +1,182 @@
+$date
+	Mon Sep 29 15:35:13 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_ring_counter $end
+$var wire 3 ! q [2:0] $end
+$var reg 1 " clk $end
+$var reg 1 # reset $end
+$scope module uut $end
+$var wire 1 $ clk $end
+$var wire 3 % q [2:0] $end
+$var wire 1 & reset $end
+$scope module dff0 $end
+$var wire 1 ' D $end
+$var wire 1 $ clk $end
+$var wire 1 & rst $end
+$var reg 1 ( Q $end
+$upscope $end
+$scope module dff1 $end
+$var wire 1 ) D $end
+$var wire 1 $ clk $end
+$var wire 1 & rst $end
+$var reg 1 * Q $end
+$upscope $end
+$scope module dff2 $end
+$var wire 1 + D $end
+$var wire 1 $ clk $end
+$var wire 1 & rst $end
+$var reg 1 , Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x,
+x+
+x*
+x)
+x(
+x'
+1&
+bx %
+0$
+1#
+0"
+bx !
+$end
+#5
+0)
+0+
+0'
+0(
+0*
+0,
+b0 !
+b0 %
+1"
+1$
+#10
+1)
+0"
+0$
+0,
+0*
+1(
+b1 !
+b1 %
+0#
+0&
+#15
+1+
+0)
+1*
+0(
+b10 !
+b10 %
+1"
+1$
+#20
+0"
+0$
+#25
+0+
+1'
+0*
+1,
+b100 !
+b100 %
+1"
+1$
+#30
+0"
+0$
+#35
+0'
+1)
+0,
+1(
+b1 !
+b1 %
+1"
+1$
+#40
+0"
+0$
+#45
+0)
+1+
+0(
+1*
+b10 !
+b10 %
+1"
+1$
+#50
+0"
+0$
+#55
+1'
+0+
+1,
+0*
+b100 !
+b100 %
+1"
+1$
+#60
+0"
+0$
+#65
+1)
+0'
+1(
+0,
+b1 !
+b1 %
+1"
+1$
+#70
+0"
+0$
+#71
+1#
+1&
+#75
+0)
+0(
+b0 !
+b0 %
+1"
+1$
+#80
+0"
+0$
+#81
+0#
+0&
+#85
+1"
+1$
+#90
+0"
+0$
+#95
+1"
+1$
+#100
+0"
+0$
+#105
+1"
+1$
+#110
+0"
+0$
+#111

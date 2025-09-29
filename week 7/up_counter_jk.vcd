@@ -1,0 +1,189 @@
+$date
+	Mon Sep 29 15:27:53 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_up_counter_2bit $end
+$var wire 2 ! q [1:0] $end
+$var reg 1 " clk $end
+$var reg 1 # reset $end
+$scope module uut $end
+$var wire 1 $ clk $end
+$var wire 1 % j0 $end
+$var wire 1 & j1 $end
+$var wire 1 ' k0 $end
+$var wire 1 ( k1 $end
+$var wire 2 ) q [1:0] $end
+$var wire 1 * reset $end
+$scope module jkff0 $end
+$var wire 1 $ clk $end
+$var wire 1 % j $end
+$var wire 1 ' k $end
+$var wire 1 * rst $end
+$var reg 1 + q $end
+$upscope $end
+$scope module jkff1 $end
+$var wire 1 $ clk $end
+$var wire 1 & j $end
+$var wire 1 ( k $end
+$var wire 1 * rst $end
+$var reg 1 , q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0,
+0+
+1*
+b0 )
+0(
+1'
+0&
+1%
+0$
+1#
+0"
+b0 !
+$end
+#5
+1"
+1$
+#10
+0"
+0$
+0#
+0*
+#15
+1&
+1(
+1+
+b1 !
+b1 )
+1"
+1$
+#20
+0"
+0$
+#25
+0&
+0(
+1,
+0+
+b10 !
+b10 )
+1"
+1$
+#30
+0"
+0$
+#35
+1&
+1(
+1+
+b11 !
+b11 )
+1"
+1$
+#40
+0"
+0$
+#45
+0&
+0(
+0,
+0+
+b0 !
+b0 )
+1"
+1$
+#50
+0"
+0$
+#55
+1&
+1(
+1+
+b1 !
+b1 )
+1"
+1$
+#60
+0"
+0$
+#65
+0&
+0(
+1,
+0+
+b10 !
+b10 )
+1"
+1$
+#70
+0,
+b0 !
+b0 )
+0"
+0$
+1#
+1*
+#75
+1"
+1$
+#80
+0"
+0$
+0#
+0*
+#85
+1&
+1(
+1+
+b1 !
+b1 )
+1"
+1$
+#90
+0"
+0$
+#95
+0&
+0(
+1,
+0+
+b10 !
+b10 )
+1"
+1$
+#100
+0"
+0$
+#105
+1&
+1(
+1+
+b11 !
+b11 )
+1"
+1$
+#110
+0"
+0$
+#115
+0&
+0(
+0,
+0+
+b0 !
+b0 )
+1"
+1$
+#120
+0"
+0$
